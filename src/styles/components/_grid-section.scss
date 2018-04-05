@@ -1,0 +1,89 @@
+.grid-section {
+  margin: $xl-size;
+
+  &__menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+    > li {
+      margin: 0 1.5rem;
+    }
+    font-weight: 300;
+  }
+
+  &__showcase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 25rem);
+    grid-gap: 2rem;
+    margin-top: $l-size;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .item-1 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+
+    .item-2 {
+      grid-column: 3 / -1;
+      grid-row: 1 / 2;
+    }
+
+    .item-3 {
+      grid-column: 3 / -1;
+    }
+
+    .item-4 {
+      grid-row: 3 / span 2;
+    }
+
+    .item-5 {
+      grid-column: 2 / span 2;
+      grid-row: 3 / span 2;
+    }
+
+    .item-8 {
+      grid-column: 1 / span 2;
+      grid-row: 5 / span 2;
+    }
+
+    .item-9 {
+      grid-column: 3 / span 2;
+      grid-row: 5 / span 2;
+    }
+
+  }
+
+  &--text-group {
+    z-index: 10;
+    position: absolute;
+    bottom: $m-size;
+    left: $m-size;
+
+    p:first-child {
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+
+    p:nth-child(2) {
+      font-weight: 600;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+}
+
+.item {
+  position: relative;
+  color: $color-primary;
+
+}

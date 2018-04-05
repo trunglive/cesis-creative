@@ -1,0 +1,39 @@
+.introduction-section-container {
+  &--top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: $xl-size;
+    margin-left: $xl-size;
+    margin-bottom: $xl-size;
+  }
+
+  &--bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: $xl-size;
+    margin-right: $xl-size;
+  }
+}
+
+.introduction-section {
+  &__title {
+    font-size: 6rem;
+    font-weight: 600;
+  }
+
+  &__branding {
+    margin-top: $s-size;
+    font-weight: 300;
+  }
+
+  &__extra-text-1,
+  &__extra-text-2 {
+    margin-top: $m-size;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+
+.introduction-section-photo {
+  width: 100%;
+}

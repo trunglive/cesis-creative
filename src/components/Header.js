@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, NavLink, Router } from "react-router-dom";
+import { NormalButton } from '../components/button/NormalButton';
 
 class Header extends Component {
   render() {
@@ -11,9 +12,7 @@ class Header extends Component {
           <p className="header__description">
             Let's make your website Great Again!
           </p>
-          <a className="header__button" href="#" target="_blank">
-            View Portfolio
-          </a>
+          <NormalButton text={"View Porfolio"} color={"white-button"} />
         </div>
       </header>
     );

@@ -1,8 +1,12 @@
 @import './base/settings';
 @import './base/base';
 
+@import './components/button/normalButton';
+
 @import './components/header';
 @import './components/homepage';
+@import './components/introduction-section';
+@import './components/grid-section';
 
 @import './components/navigation/footer';
 
