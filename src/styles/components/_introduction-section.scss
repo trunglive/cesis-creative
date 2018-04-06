@@ -15,22 +15,31 @@
   }
 }
 
+@mixin section-title {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+@mixin section-text($margin-top, $font-size: 1.6rem) {
+  margin-top: $margin-top;
+  font-size: $font-size;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
 .introduction-section {
   &__title {
-    font-size: 6rem;
-    font-weight: 600;
+    @include section-title;
   }
 
   &__branding {
-    margin-top: $s-size;
-    font-weight: 300;
+    @include section-text($s-size);
   }
 
   &__extra-text-1,
   &__extra-text-2 {
-    margin-top: $m-size;
-    font-size: 1.4rem;
-    font-weight: 300;
+    @include section-text($m-size, 1.3rem);
+    color: $color-tertiary;
   }
 }
 

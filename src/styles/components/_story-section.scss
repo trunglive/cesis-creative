@@ -1,0 +1,79 @@
+.story-section {
+  margin: $xl-size;
+
+  &__brand { 
+    width: 16rem;
+    margin-right: $xl-size;
+  }
+
+  &__title {
+    padding-right: 3rem;
+    border-right: 0.6rem solid $color-button;
+  }
+
+  &__title p {
+    @include section-title;
+    text-align: end;
+    white-space: nowrap;
+  }
+
+  &__branding {
+    @include section-text($s-size);
+    text-align: end;
+  }
+}
+
+.story-section-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-section-image-slider {
+  background-color: purple;
+  margin: $l-size 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+  }
+}
+
+.story-section-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14rem;
+  color: $color-tertiary;
+
+  &__text {
+    margin-right: 7rem;
+
+    p {
+      @include section-text($m-size, 1.3rem);
+    }
+
+  }
+
+  &__tab {
+    margin-left: 7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    p {
+      text-align: end;
+      white-space: nowrap;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-secondary;
+      }
+    }
+
+    p:nth-child(2) {
+      margin: $m-size 0;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.pricing-section {
+  position: relative;
+  text-align: center;
+
+  &__photo {
+    width: 100%;
+    min-height: 90vh;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(30%);
+  }
+
+  &__title {
+    @include section-title;
+    color: $color-primary;
+  }
+
+  &__description {
+    @include section-text($s-size);
+    color: $color-primary;
+  }
+}
+
+.pricing-section-info-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pricing-section-project-container {
+  display: flex;
+  margin-top: $l-size;
+}
+
+.pricing-section-project-item {
+  color: $color-primary;
+  font-size: 1.4rem;
+  font-weight: 300;
+
+  > img {
+    width: 8rem;
+  }
+
+  &__title {
+    margin: $m-size 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0 6rem;
+  }
+
+  li {
+    margin: $xs-size 0;
+    list-style-type: none;
+    white-space: nowrap;
+  }
+
+  &--linethrough {
+    text-decoration: line-through;
+  }
+}

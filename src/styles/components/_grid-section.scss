@@ -8,8 +8,9 @@
 
     > li {
       margin: 0 1.5rem;
+      font-weight: 300;
     }
-    font-weight: 300;
+
   }
 
   &__showcase {
@@ -18,7 +19,8 @@
     grid-template-rows: repeat(6, 25rem);
     grid-gap: 2rem;
     margin-top: $l-size;
-
+    margin-bottom: 1rem;
+    
     img {
       width: 100%;
       height: 100%;

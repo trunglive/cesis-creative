@@ -8,6 +8,13 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 5rem;
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover {
+    background-color: $color-button;
+    color: $color-primary;
+    border: 0.5px solid $color-button;
   }
 }
 
@@ -19,4 +26,8 @@
 .black-button {
   color: $color-secondary;
   border: 0.5px solid $color-secondary;
+}
+
+.small-button {
+  padding: 1.25rem 2.75rem;
 }
