@@ -4,6 +4,7 @@ import IntroductionSectionContainer from './IntroductionSectionContainer';
 import GridSection from './GridSection';
 import PricingSection from './PricingSection';
 import StorySection from './StorySection';
+import LogoBrandSection from './LogoBrandSection';
 
 class HomePage extends Component {
 
@@ -15,6 +16,7 @@ class HomePage extends Component {
         <GridSection />
         <PricingSection />
         <StorySection />
+        <LogoBrandSection />
       </div>
     );
   }

@@ -1,0 +1,11 @@
+.logo-brand-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 12rem;
+  grid-row-gap: 2rem;
+  margin: $xl-size;
+
+  img {
+    width: 100%;
+  }
+}
