@@ -6,6 +6,7 @@ import PricingSection from './PricingSection';
 import StorySection from './StorySection';
 import LogoBrandSection from './LogoBrandSection';
 import NewsSection from './NewsSection';
+import BuyCesisSection from './BuyCesisSection';
 
 class HomePage extends Component {
 
@@ -19,6 +20,7 @@ class HomePage extends Component {
         <StorySection />
         <LogoBrandSection />
         <NewsSection />
+        <BuyCesisSection />
       </div>
     );
   }
