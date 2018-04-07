@@ -1,0 +1,11 @@
+.credit-section {
+  @include section-text($m-size, 1.3rem);
+  margin-bottom: $m-size;
+
+  a {
+    display: block;
+    color: $color-tertiary;
+    text-align: center;
+    text-decoration: none;
+  }
+}

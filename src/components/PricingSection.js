@@ -13,7 +13,7 @@ export default class PricingSection extends Component {
           </p>
           <div className="pricing-section-project-container">
             <div className="pricing-section-project-item">
-              <img src="/icons/personal-project.svg" />
+              <img src="/icons/pricing/personal.svg" />
               <p className="pricing-section-project-item__title">
                 Personal Project
               </p>
@@ -43,7 +43,7 @@ export default class PricingSection extends Component {
             </div>
 
             <div className="pricing-section-project-item">
-              <img src="/icons/business-project.svg" />
+              <img src="/icons/pricing/business.svg" />
               <p className="pricing-section-project-item__title">
                 Business Project
               </p>
@@ -69,7 +69,7 @@ export default class PricingSection extends Component {
             </div>
 
             <div className="pricing-section-project-item">
-              <img src="/icons/exclusive-project.svg" />
+              <img src="/icons/pricing/exclusive.svg" />
               <p className="pricing-section-project-item__title">
                 Exclusive Project
               </p>

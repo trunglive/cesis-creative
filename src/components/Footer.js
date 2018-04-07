@@ -5,7 +5,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer__info">
       <div className="footer__brand-group">
-        <img src="/icons/brand-black.svg" />
+        <img src="/icons/brand/brand-black.svg" />
         <p>Cesis Creative</p>
       </div>
       <div className="footer__contact-group">
