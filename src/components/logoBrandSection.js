@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class LogoBrandSection extends Component {
   render() {
@@ -15,6 +15,6 @@ export default class LogoBrandSection extends Component {
         <img src="/icons/partner/the-north-face-1.svg" />
         <img src="/icons/partner/verizon-2.svg" />
       </div>
-    )
+    );
   }
 }

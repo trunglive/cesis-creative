@@ -10,7 +10,6 @@
       margin: 0 1.5rem;
       font-weight: 300;
     }
-
   }
 
   &__showcase {
@@ -20,7 +19,7 @@
     grid-gap: 2rem;
     margin-top: $l-size;
     margin-bottom: 1rem;
-    
+
     img {
       width: 100%;
       height: 100%;
@@ -59,7 +58,6 @@
       grid-column: 3 / span 2;
       grid-row: 5 / span 2;
     }
-
   }
 
   &--text-group {
@@ -88,5 +86,4 @@
 .item {
   position: relative;
   color: $color-primary;
-
 }

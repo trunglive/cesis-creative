@@ -24,12 +24,11 @@ const Footer = () => (
     </div>
 
     <div className="footer__subscribe-newsletter">
-    <p>Subscribe Newsletter</p>
+      <p>Subscribe Newsletter</p>
       <div className="footer__input-group">
         <input type="email" placeholder="Enter your email" />
         <img src="/icons/arrow.svg" />
       </div>
-      
     </div>
   </footer>
 );

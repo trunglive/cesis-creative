@@ -1,7 +1,7 @@
 .story-section {
   margin: $xl-size;
 
-  &__brand { 
+  &__brand {
     width: 16rem;
     margin-right: $xl-size;
   }
@@ -53,7 +53,6 @@
     p {
       @include section-text($m-size, 1.3rem);
     }
-
   }
 
   &__tab {

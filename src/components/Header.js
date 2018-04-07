@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, NavLink, Router } from "react-router-dom";
-import { NormalButton } from '../components/button/NormalButton';
+import { NormalButton } from "../components/button/NormalButton";
 
 class Header extends Component {
   render() {

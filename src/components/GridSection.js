@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NormalButton } from '../components/button/NormalButton';
+import { NormalButton } from "../components/button/NormalButton";
 
 export default class GridSection extends Component {
   render() {
@@ -83,7 +83,6 @@ export default class GridSection extends Component {
         <div className="grid-section__button">
           <NormalButton text={"View all"} color={"black-button"} />
         </div>
-        
       </div>
     );
   }
