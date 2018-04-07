@@ -7,6 +7,7 @@ import StorySection from './StorySection';
 import LogoBrandSection from './LogoBrandSection';
 import NewsSection from './NewsSection';
 import BuyCesisSection from './BuyCesisSection';
+import Footer from './Footer';
 
 class HomePage extends Component {
 
@@ -21,6 +22,7 @@ class HomePage extends Component {
         <LogoBrandSection />
         <NewsSection />
         <BuyCesisSection />
+        <Footer />
       </div>
     );
   }

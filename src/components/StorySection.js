@@ -5,7 +5,7 @@ export default class StorySection extends Component {
     return (
       <div className="story-section">
         <div className="story-section-intro">
-          <img className="story-section__brand" src="/icons/brand-purple.svg" />
+          <img className="story-section__brand" src="/icons/brand-gradient.svg" />
           <div className="story-section-text">
             <div className="story-section__title">
               <div>
