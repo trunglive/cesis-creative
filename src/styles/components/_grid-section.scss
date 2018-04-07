@@ -16,7 +16,7 @@
   &__showcase {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 25rem);
+    grid-template-rows: repeat(6, 35vh);
     grid-gap: 2rem;
     margin-top: $l-size;
     margin-bottom: 1rem;
