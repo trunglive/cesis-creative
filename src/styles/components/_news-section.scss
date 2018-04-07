@@ -12,31 +12,53 @@
 .news-section {
   display: grid;
   grid-template-columns: repeat(2, minmax(30rem, 1fr));
-  grid-template-rows: repeat(2, 45vh);
+  grid-template-rows: repeat(2, 50vh);
 
   img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(70%);
+    filter: brightness(50%);
   }
 
   &__featured-post {
-    grid-row: 1 / -1;
     position: relative;
+    grid-row: 1 / -1;
 
-    &--title {
+    &--tag {
       @include title-and-box;
     }
   }
 
   &__tips-and-tricks {
-    grid-row: 1 / span 1;
     position: relative;
+    grid-row: 1 / span 1;
 
-    &--title {
+    &--tag {
       @include title-and-box($color-blue);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 6rem;
+    left: 6rem;
+    z-index: 10;
+    width: 70%;
+    
+    @include section-text($m-size, 1.3rem);
+
+    color: $color-primary;
+   
+    &--bold {
+      padding: 1rem 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    &--slash {
+      margin: 0 0.75rem;
     }
   }
 }

@@ -2,10 +2,11 @@
   &--normal {
     display: inline-block;
     margin-top: $m-size;
-    padding: 1.75rem 2.75rem;
+    padding: 1.5rem 2.5rem;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
+    line-height: normal;
     letter-spacing: 1px;
     border-radius: 5rem;
     transition: all 0.2s ease-out;
