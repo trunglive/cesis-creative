@@ -3,15 +3,41 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: $xl-size;
-    margin-left: $xl-size;
     margin-bottom: $xl-size;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-gap: $l-size;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(2, minmax(40rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $l-size;
+    }
   }
 
   &--bottom {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: $xl-size;
     margin-right: $xl-size;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-right: $l-size;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(2, minmax(40rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-right: 0;
+    }
   }
 }
 
@@ -32,6 +58,10 @@
 .introduction-section {
   &__title {
     @include section-title;
+
+    p {
+      white-space: nowrap;
+    }
   }
 
   &__branding {
@@ -47,4 +77,17 @@
 
 .introduction-section-photo {
   width: 100%;
+}
+
+.introduction-section-text {
+  margin-left: $xl-size;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-left: $l-size;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    margin-bottom: $l-size;
+    margin-right: $l-size;
+  }
 }

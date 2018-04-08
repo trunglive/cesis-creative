@@ -4,22 +4,42 @@
   &__brand {
     width: 16rem;
     margin-right: $xl-size;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      display: none;
+    }
   }
 
   &__title {
     padding-right: 3rem;
     border-right: 0.6rem solid $color-button;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      border: none;
+    }
   }
 
   &__title p {
     @include section-title;
     text-align: end;
     white-space: nowrap;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      text-align: center;
+    }
   }
 
   &__branding {
     @include section-text($s-size);
     text-align: end;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin: $xl-size $l-size;
   }
 }
 
@@ -73,5 +93,13 @@
     p:nth-child(2) {
       margin: $m-size 0;
     }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    padding: 0 5rem;
   }
 }

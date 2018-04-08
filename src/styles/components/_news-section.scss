@@ -12,7 +12,7 @@
 .news-section {
   display: grid;
   grid-template-columns: repeat(2, minmax(30rem, 1fr));
-  grid-template-rows: repeat(2, 50vh);
+  grid-template-rows: repeat(2, 55vh);
 
   img {
     display: block;
@@ -29,6 +29,10 @@
     &--tag {
       @include title-and-box;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: auto;
+    }
   }
 
   &__tips-and-tricks {
@@ -37,6 +41,10 @@
 
     &--tag {
       @include title-and-box($color-blue);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: auto;
     }
   }
 
@@ -62,6 +70,11 @@
       margin: 0 0.75rem;
     }
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    grid-gap: $l-size;
+  }
 }
 
 .all-articles {
@@ -79,5 +92,11 @@
 
   &__branding {
     @include section-text($s-size);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: auto;
+    grid-row: auto;
+    margin-bottom: $xl-size;
   }
 }

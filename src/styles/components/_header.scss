@@ -10,10 +10,10 @@
   }
 
   &__brand {
-    width: 4rem;
     position: absolute;
     top: $m-size;
     left: $m-size;
+    width: 4rem;
   }
 
   .header-introduction {
@@ -21,8 +21,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     color: $color-primary;
+    text-align: center;
   }
 
   &__title {
