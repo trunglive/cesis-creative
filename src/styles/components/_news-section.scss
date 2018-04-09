@@ -87,7 +87,8 @@
     grid-template-rows: repeat(2, 80vh);
   }
 
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: $bp-xsmallest) {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     grid-template-rows: repeat(2, 100vh);
   }
 }
