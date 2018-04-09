@@ -7,6 +7,7 @@ export default class NewsSection extends Component {
       <div className="news-section">
         <div className="news-section__featured-post">
           <div className="news-section__featured-post--tag">Featured Posts</div>
+
           <div className="news-section__text">
             <div>
               <span>April 7, 2018 </span>
@@ -22,12 +23,19 @@ export default class NewsSection extends Component {
             </p>
             <NormalButton text={"Read more"} color={"white-button"} />
           </div>
+
+          
           <img src="/photos/photo-15.jpg" />
         </div>
         <div className="news-section__tips-and-tricks">
           <div className="news-section__tips-and-tricks--tag">
             Tips and Tricks
           </div>
+          <div>
+            
+          </div>
+
+
           <div className="news-section__text">
             <div>
               <span>April 7, 2018 </span>
@@ -43,6 +51,8 @@ export default class NewsSection extends Component {
             </p>
             <NormalButton text={"Read more"} color={"white-button"} />
           </div>
+
+
           <img src="/photos/photo-16.jpg" />
         </div>
         <div className="all-articles">

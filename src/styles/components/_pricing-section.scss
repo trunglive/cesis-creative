@@ -1,22 +1,43 @@
 .pricing-section {
   position: relative;
   text-align: center;
+  overflow-y: hidden;
 
   &__photo {
     width: 100%;
-    min-height: 90vh;
+    min-height: 100rem;
     object-fit: cover;
     filter: brightness(60%);
+
+    @media only screen and (max-width: $bp-medium-small) {
+      min-height: 140rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      min-height: 150rem;
+    }
   }
 
   &__title {
     @include section-title;
     color: $color-primary;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      margin: $m-size 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4rem;
+    }
   }
 
   &__description {
     @include section-text($s-size);
     color: $color-primary;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      margin: 0 2rem;
+    }
   }
 }
 
@@ -29,7 +50,16 @@
 
 .pricing-section-project-container {
   display: flex;
+  align-items: center;
   margin-top: $l-size;
+
+  @media only screen and (max-width: $bp-medium-small) {
+    flex-direction: column;
+  }
+
+  div:nth-child(2) {
+    padding: $s-size 0;
+  }
 }
 
 .pricing-section-project-item {
@@ -39,6 +69,10 @@
 
   > img {
     width: 8rem;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      display: none;
+    }
   }
 
   &__title {
@@ -49,15 +83,46 @@
 
   ul {
     margin: 0 6rem;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1.5rem;
+      margin: 0;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+      grid-gap: 0.5rem;
+    }
   }
 
   li {
     margin: $xs-size 0;
     list-style-type: none;
     white-space: nowrap;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      padding: 0 3rem;
+      justify-self: left;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 2rem;
+    }
   }
 
   &--linethrough {
     text-decoration: line-through;
+  }
+
+  .button {
+    width: 12rem;
+    margin: $m-size auto;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -7,6 +7,10 @@
     height: 90vh;
     object-fit: cover;
     filter: brightness(50%);
+
+    @media only screen and (max-width: $bp-small) {
+      height: 65vh;
+    }
   }
 
   &__brand {
@@ -14,6 +18,10 @@
     top: $m-size;
     left: $m-size;
     width: 4rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 2.5rem;
+    }
   }
 
   .header-introduction {
@@ -30,6 +38,23 @@
     font-size: 14rem;
     font-weight: 900;
     white-space: nowrap;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      font-size: 12rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 2rem;
+      font-size: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 8rem;
+    }
+
+    @media only screen and (max-width: 440px) {
+      font-size: 4rem;
+    }
   }
 
   &__description {
@@ -37,5 +62,9 @@
     font-size: 2.6rem;
     font-weight: 300;
     letter-spacing: 1px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2rem;
+    }
   }
 }

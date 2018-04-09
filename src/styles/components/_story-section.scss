@@ -27,6 +27,10 @@
     @media only screen and (max-width: $bp-medium-small) {
       text-align: center;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4rem;
+    }
   }
 
   &__branding {
@@ -34,12 +38,18 @@
     text-align: end;
 
     @media only screen and (max-width: $bp-medium-small) {
+      padding: 0 2.5rem;
       text-align: center;
     }
   }
 
   @media only screen and (max-width: $bp-large) {
     margin: $xl-size $l-size;
+  }
+
+
+  @media only screen and (max-width: $bp-medium-small) {
+    margin: $xl-size 0;
   }
 }
 
@@ -73,6 +83,10 @@
     p {
       @include section-text($m-size, 1.3rem);
     }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      margin-right: 0;
+    }
   }
 
   &__tab {
@@ -88,10 +102,29 @@
         cursor: pointer;
         color: $color-secondary;
       }
+
+      @media only screen and (max-width: $bp-medium-small) {
+        padding-top: 1.5rem;
+      }
     }
 
     p:nth-child(2) {
       margin: $m-size 0;
+
+      @media only screen and (max-width: $bp-medium-small) {
+        margin: 0;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin: 0 2rem;
     }
   }
 
@@ -100,6 +133,12 @@
   }
 
   @media only screen and (max-width: $bp-medium-small) {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 0 5rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0 $m-size;
   }
 }

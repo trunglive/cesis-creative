@@ -62,6 +62,10 @@
     p {
       white-space: nowrap;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4rem;
+    }
   }
 
   &__branding {
@@ -89,5 +93,10 @@
   @media only screen and (max-width: $bp-medium-small) {
     margin-bottom: $l-size;
     margin-right: $l-size;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-left: $m-size;
+    margin-right: $m-size;
   }
 }
