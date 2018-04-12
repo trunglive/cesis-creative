@@ -27,7 +27,7 @@ const Footer = () => (
       <p>Subscribe Newsletter</p>
       <div className="footer__input-group">
         <input type="email" placeholder="Enter your email" />
-        <img src="/icons/arrow.svg" />
+        <img src="/icons/misc/arrow.svg" />
       </div>
     </div>
   </footer>

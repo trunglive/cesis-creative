@@ -1,6 +1,6 @@
 .menu {
   height: 0;
-  // overflow: hidden;
+  visibility: hidden;
 
   &__checkbox:checked ~ &__background {
     transform: scale(70);
@@ -12,22 +12,36 @@
 
   &__button {
     position: absolute;
-    top: 6rem;
-    right: 6rem;
+    top: $m-size;
+    right: $m-size;
     z-index: 200;
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     background-color: $color-primary;
     border-radius: 50%;
+
+    &--close,
+    &--open {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-50%, 50%);
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &--close {
+      visibility: hidden;
+    }
   }
 
   &__background {
     position: absolute;
-    top: 6.5rem;
-    right: 6.5rem;
+    top: $m-size;
+    right: $m-size;
     z-index: 100;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-image: radial-gradient($color-secondary, $color-dark);
     transition: transform 0.2s;
@@ -70,5 +84,9 @@
       color: $color-secondary;
       background-color: $color-primary;
     }
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    visibility: visible !important;
   }
 }

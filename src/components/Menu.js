@@ -12,9 +12,27 @@ export default class Menu extends Component {
   handleMenuToggle = () => {
     const { menuIsSelected } = this.state;
 
-    menuIsSelected
-      ? (document.body.style.overflow = "auto")
-      : (document.body.style.overflow = "hidden");
+    if (menuIsSelected) {
+      document.body.style.overflow = "auto";
+      document.getElementsByClassName(
+        "menu__button--open"
+      )[0].style.visibility =
+        "visible";
+      document.getElementsByClassName(
+        "menu__button--close"
+      )[0].style.visibility =
+        "hidden";
+    } else {
+      document.body.style.overflow = "hidden";
+      document.getElementsByClassName(
+        "menu__button--open"
+      )[0].style.visibility =
+        "hidden";
+      document.getElementsByClassName(
+        "menu__button--close"
+      )[0].style.visibility =
+        "visible";
+    }
 
     this.setState({ menuIsSelected: !menuIsSelected });
   };
@@ -29,7 +47,8 @@ export default class Menu extends Component {
           onClick={this.handleMenuToggle}
         />
         <label htmlFor="menu-toggle" className="menu__button" id="menu__button">
-          Menu
+          <img className="menu__button--open" src="/icons/misc/menu-open.svg" />
+          <img className="menu__button--close" src="/icons/misc/menu-close.svg" />
         </label>
         <div className="menu__background" />
 
