@@ -13,7 +13,7 @@ class IntroductionSection extends Component {
     } = this.props;
 
     return (
-      <section className="introduction-section">
+      <section className="introduction-section" id="introduction">
         <div className="introduction-section-text">
           <div className="introduction-section__title">
             <p className="introduction-section__title--top">{title[0]}</p>

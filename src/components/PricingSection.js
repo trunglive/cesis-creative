@@ -4,7 +4,7 @@ import { NormalButton } from "./button/NormalButton";
 export default class PricingSection extends Component {
   render() {
     return (
-      <div className="pricing-section">
+      <div className="pricing-section" id="pricing">
         <img className="pricing-section__photo" src="/photos/photo-13.jpg" />
         <div className="pricing-section-info-container">
           <p className="pricing-section__title">Select your plans</p>

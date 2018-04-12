@@ -4,7 +4,7 @@ import { NormalButton } from "../components/button/NormalButton";
 export default class NewsSection extends Component {
   render() {
     return (
-      <div className="news-section">
+      <div className="news-section" id="news">
         <div className="news-section__featured-post">
           <div className="news-section__featured-post--tag">Featured Posts</div>
 

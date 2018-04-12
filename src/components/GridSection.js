@@ -4,7 +4,7 @@ import { NormalButton } from "../components/button/NormalButton";
 export default class GridSection extends Component {
   render() {
     return (
-      <div className="grid-section">
+      <div className="grid-section" id="services">
         <ul className="grid-section__menu">
           <li>All</li>
           <li>Web Design</li>

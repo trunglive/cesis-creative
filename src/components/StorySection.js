@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class StorySection extends Component {
   render() {
     return (
-      <div className="story-section">
+      <div className="story-section" id="about-us">
         <div className="story-section-intro">
           <img
             className="story-section__brand"

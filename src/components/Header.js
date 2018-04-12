@@ -4,7 +4,9 @@ import { NormalButton } from "../components/button/NormalButton";
 const Header = () => (
   <header className="header">
     <img className="header__photo" src="/photos/photo-1.jpg" />
-    <img className="header__brand" src="/icons/brand/brand-white.svg" />
+    <a href="#">
+      <img className="header__brand" src="/icons/brand/brand-white.svg" />
+    </a>
     <div className="header-introduction">
       <p className="header__title">I am Cesis</p>
       <p className="header__description">
