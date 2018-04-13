@@ -41,20 +41,6 @@
   }
 }
 
-@mixin section-title {
-  font-family: $font-secondary;
-  font-size: 5.5rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-}
-
-@mixin section-text($margin-top, $font-size: 1.6rem) {
-  margin-top: $margin-top;
-  font-size: $font-size;
-  font-weight: 300;
-  line-height: 2.5rem;
-}
-
 .introduction-section {
   &__title {
     @include section-title;

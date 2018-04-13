@@ -1,19 +1,18 @@
 @import './base/settings';
 @import './base/base';
 
+@import './mixins/main';
+
 @import './components/button/normalButton';
-
-@import './components/menu';
-@import './components/header';
+@import './components/navigation/menu';
+@import './components/navigation/header';
 @import './components/homepage';
-@import './components/introduction-section';
-@import './components/grid-section';
-@import './components/pricing-section';
-@import './components/story-section';
-@import './components/logo-brand-section';
-@import './components/news-section';
-@import './components/buy-cesis-section';
+@import './components/sections/introduction-section';
+@import './components/sections/grid-section';
+@import './components/sections/pricing-section';
+@import './components/sections/story-section';
+@import './components/sections/logo-brand-section';
+@import './components/sections/news-section';
+@import './components/sections/buy-cesis-section';
 @import './components/navigation/footer';
-
-@import './components/credit-section';
-
+@import './components/navigation/credit-section';

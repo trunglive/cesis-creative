@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "start": "webpack-dev-server --open"
   },
   "dependencies": {
@@ -18,14 +19,12 @@
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
     "live-server": "^1.2.0",
     "node-sass": "4.8.3",
     "normalize.css": "8.0.0",
     "react": "16.3.0",
     "react-dom": "16.3.0",
-    "react-modal": "3.3.2",
-    "react-router-dom": "4.2.2",
-    "react-select": "^1.2.1",
     "sass-loader": "6.0.7",
     "style-loader": "0.20.3",
     "validator": "9.4.1",

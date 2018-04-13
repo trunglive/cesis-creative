@@ -13,8 +13,8 @@
   }
 
   &:hover {
-    background-color: $color-button;
     color: $color-primary;
+    background-color: $color-button;
     border: 0.5px solid $color-button;
   }
 }
