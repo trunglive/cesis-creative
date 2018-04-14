@@ -8,14 +8,14 @@
 
 https://cesis-creative.herokuapp.com
 
-![cesis](cesis-demo.png)
+![cesis](cesis-demo.jpg)
 
 ### Quick Start
 
 **Clone the project**
 
 ```shell
-$ git clone https://github.com/trunglive/cesis-creative
+$ git clone https://github.com/trunglive/cesis-creative.git
 ```
 
 **Run the app**
@@ -23,7 +23,7 @@ $ git clone https://github.com/trunglive/cesis-creative
 ```shell
 $ cd cesis\ creative
 $ yarn install
-$ yarn dev
+$ yarn run dev
 ```
 
 ### Contributor
