@@ -6,7 +6,7 @@
 
 ### Demo
 
-https://cesis-creative.herokuapp.com
+https://cesis-creative.firebaseapp.com
 
 ![cesis](cesis-demo.jpg)
 
