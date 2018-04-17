@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: $l-size $xl-size;
@@ -21,7 +21,7 @@
       color: $color-dark;
     }
 
-    @media only screen and (max-width: $bp-medium-small) {
+    @media only screen and (max-width: $bp-medium) {
       justify-content: center;
       margin-top: $l-size;
     }
@@ -82,7 +82,7 @@
     margin: $l-size;
   }
 
-  @media only screen and (max-width: $bp-medium-small) {
+  @media only screen and (max-width: $bp-medium) {
     flex-direction: column-reverse;
     text-align: center;
   }
