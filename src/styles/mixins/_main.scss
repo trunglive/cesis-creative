@@ -1,11 +1,9 @@
 @mixin section-title {
-  font-family: $font-secondary;
-  font-size: 5.5rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  font-size: 5.25rem;
+  font-weight: 600;
 }
 
-@mixin section-text($margin-top, $font-size: 1.6rem) {
+@mixin section-text($margin-top, $font-size: 1.4rem) {
   margin-top: $margin-top;
   font-size: $font-size;
   font-weight: 300;

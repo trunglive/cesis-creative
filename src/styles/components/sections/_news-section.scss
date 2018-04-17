@@ -43,9 +43,9 @@
     left: 6rem;
     z-index: 10;
     width: 70%;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.7px;
 
-    @include section-text($m-size, 1.3rem);
+    @include section-text($m-size, 1.2rem);
 
     color: $color-primary;
 

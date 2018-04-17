@@ -28,7 +28,7 @@
   }
 
   &__contact-group {
-    @include section-text($m-size, 1.3rem);
+    @include section-text($m-size, 1.2rem);
     color: $color-tertiary;
 
     span:nth-child(2n) {
@@ -46,7 +46,7 @@
     }
 
     input {
-      @include section-text($m-size, 1.3rem);
+      @include section-text($m-size, 1.2rem);
       width: 25rem;
       margin-top: 0;
       margin-bottom: 2px;

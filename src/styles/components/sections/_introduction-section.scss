@@ -60,7 +60,7 @@
 
   &__extra-text-1,
   &__extra-text-2 {
-    @include section-text($m-size, 1.3rem);
+    @include section-text($m-size, 1.1rem);
     color: $color-tertiary;
   }
 }

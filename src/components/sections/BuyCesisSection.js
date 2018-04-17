@@ -15,7 +15,7 @@ const BuyCesisSection = () => (
       <NormalButton
         text={"Buy Cesis"}
         color={"white-button"}
-        link={"#buy-cesis"}
+        link={"#pricing"}
       />
     </div>
   </header>

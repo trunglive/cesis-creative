@@ -15,7 +15,7 @@ const NewsSection = () => (
         <p className="news-section__text--bold">
           How to improve your website in 1 month
         </p>
-        <p>
+        <p className="news-section__text--light">
           Modern complex layout and highly customizable components. Full control
           over all layers. Award winning customer support.
         </p>

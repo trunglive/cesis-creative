@@ -24,7 +24,6 @@
 
   &__title {
     @include section-title;
-    font-family: $font-secondary;
     white-space: nowrap;
 
     @media only screen and (max-width: $bp-small) {

@@ -6,11 +6,6 @@
   box-sizing: inherit;
 }
 
-@font-face {
-  font-family: "Gilroy";
-  src: url("/fonts/gilroy-extrabold.otf") format("otf");
-}
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -30,6 +25,6 @@ html {
 
 body {
   font-family: $font-primary;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: $color-secondary;
 }
