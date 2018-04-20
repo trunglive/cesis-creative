@@ -2,7 +2,7 @@
 
 ## Cesis Creative
 
-> Cesis Creative is a single demo page for creative agency. ReactJS and SASS are integrated into this project.
+> Cesis is a single demo page for creative agency. React and SASS are integrated into this project.
 
 ### Demo
 
