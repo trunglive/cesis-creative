@@ -1,6 +1,5 @@
 .footer {
   display: flex;
-  // flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: $l-size $xl-size;
@@ -47,13 +46,14 @@
 
     input {
       @include section-text($m-size, 1.2rem);
+
       width: 25rem;
       margin-top: 0;
       margin-bottom: 2px;
       color: $color-tertiary;
+      line-height: 5;
       border: none;
       outline: none;
-      line-height: 5;
 
       &:focus::placeholder {
         opacity: 0;

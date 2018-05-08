@@ -124,10 +124,10 @@
   }
 
   &--text-group {
-    z-index: 10;
     position: absolute;
     bottom: $m-size;
     left: $m-size;
+    z-index: 10;
 
     p:first-child {
       margin-bottom: 0.5rem;

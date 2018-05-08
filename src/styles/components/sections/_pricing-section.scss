@@ -20,6 +20,7 @@
 
   &__title {
     @include section-title;
+
     color: $color-primary;
 
     @media only screen and (max-width: $bp-medium-small) {
@@ -33,6 +34,7 @@
 
   &__description {
     @include section-text($s-size);
+
     color: $color-primary;
 
     @media only screen and (max-width: $bp-medium-small) {
@@ -63,9 +65,9 @@
 }
 
 .pricing-section-project-item {
-  color: $color-primary;
   font-size: 1.4rem;
   font-weight: 300;
+  color: $color-primary;
 
   > img {
     width: 8rem;
@@ -105,8 +107,8 @@
     white-space: nowrap;
 
     @media only screen and (max-width: $bp-medium-small) {
-      padding: 0 3rem;
       justify-self: left;
+      padding: 0 3rem;
     }
 
     @media only screen and (max-width: $bp-smallest) {

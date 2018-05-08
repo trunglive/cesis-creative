@@ -21,6 +21,7 @@
 
   &__title p {
     @include section-title;
+
     text-align: end;
     white-space: nowrap;
 
@@ -35,6 +36,7 @@
 
   &__branding {
     @include section-text($s-size);
+
     text-align: end;
 
     @media only screen and (max-width: $bp-medium-small) {

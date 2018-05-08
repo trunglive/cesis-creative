@@ -1,16 +1,18 @@
-## **Design credit of the project: [Tran Mau Tri Tam](https://dribbble.com/shots/4410783-Cesis-Creative-Demo-Homepage/attachments/1002739)**
+#### Design credit of the project: Tran Mau Tri Tam
 
-## Cesis Creative
+* https://dribbble.com/shots/4410783-Cesis-Creative-Demo-Homepage
+
+#### Cesis Creative
 
 > Cesis is a single demo page for creative agency. React and SASS are integrated into this project.
 
-### Demo
+#### Demo
 
 https://cesis-creative.firebaseapp.com
 
 ![cesis](cesis-demo.jpg)
 
-### Quick Start
+#### Quick Start
 
 **Clone the project**
 
@@ -26,10 +28,10 @@ $ yarn install
 $ yarn run dev
 ```
 
-### Contributor
+#### Contributor
 
 Trung Vo ([trunglive](https://github.com/trunglive))
 
-### License
+#### License
 
 This project is licensed under the MIT License. Please check the `LICENSE` file.

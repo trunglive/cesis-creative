@@ -1,5 +1,6 @@
 .credit-section {
   @include section-text($m-size, 1.2rem);
+  
   margin-bottom: $m-size;
 
   a {

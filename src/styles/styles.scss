@@ -4,9 +4,12 @@
 @import './mixins/main';
 
 @import './components/button/normalButton';
+
 @import './components/navigation/menu';
 @import './components/navigation/header';
+
 @import './components/homepage';
+
 @import './components/sections/introduction-section';
 @import './components/sections/grid-section';
 @import './components/sections/pricing-section';
@@ -14,5 +17,6 @@
 @import './components/sections/logo-brand-section';
 @import './components/sections/news-section';
 @import './components/sections/buy-cesis-section';
+
 @import './components/navigation/footer';
 @import './components/navigation/credit-section';
